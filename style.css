@@ -1,0 +1,115 @@
+/* || General setup */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+
+
+
+
+
+/* || header layout */
+
+nav, article, aside, footer, summary {
+    padding: 1%;
+}
+
+/* || main layout */
+
+main {
+    display: flex;
+}
+
+article {
+    background-color: #dae2bb;
+    flex: 4;
+}
+
+aside {
+    flex: 2;
+    background-color: #95ce67
+}
+
+
+/* Nav */
+header {
+    background-color: aqua;
+    height: 50px;
+
+
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.content {
+    line-height: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: transparent;
+    color: white;
+}
+
+a:link, a:visited {
+    color: #000;
+    text-shadow: none !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h2 {
+    padding: 4px;
+    border-radius: 10px;
+    width: auto;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: bolder;
+}
+
+meter {
+
+    margin-left: 10px;
+    display: inline-block;
+    width: 190px;
+    height: 20px;
+
+}
+
+#myBody {
+    transition: background-color 2s;
+}
+
+.anchors a {
+    color: #2B4865;
+    font-weight: 600;
+}
+
+.colorPickerBox {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 50px;
+    font-size: 16px;
+
+
+}
