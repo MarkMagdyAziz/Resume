@@ -6,16 +6,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="stylesheet" href="./style.css" </head>
-        <script src="https://kit.fontawesome.com/b92e1ad9d5.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/b92e1ad9d5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel='stylesheet' href='mobile.css' media='screen and (max-width: 480px)'>
+        <link rel='stylesheet' href='tablet.css' media='screen and (min-width: 481px) and (max-width: 767px)'>
+        <link rel='stylesheet' href='mediumScreen.css' media='screen and (min-width: 768px) and (max-width: 992px)'>
 
-    <body id="myBody">
-        <header style="padding-bottom: 60px;  display: flex; justify-content: center; font-size: 18px; ">
+        <script src="https://kit.fontawesome.com/b92e1ad9d5.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="flex-container col-14" id="myBody">
+        <header class="header col-16">
             <div style="text-align: center;">
                 <h3>Mark Magdy</h3>
                 <h3>Junior MEARN Developer </h3>
-
             </div>
 
         </header>
@@ -160,33 +163,32 @@
             <aside>
                 <h2 style="background-color: transparent; text-align: center;">Contacts</h2>
 
-                <div style="padding:5px 20px 20px 0;color:black;">
+                <div class="aside--info">
                     <ul>
                         <li>
 
-                            <h4><i class="fa-solid fa-location-dot" style="font-size:16px"></i> Location: <span>Shoubra
+                            <h4><i class="fa-solid fa-location-dot"></i> Location: <span>Shoubra
                                     - Cairo </span></h4>
                         </li>
                         <li>
 
-                            <h4><i class="fa-solid fa-square-phone" style="font-size:16px"></i></i> Tel:
+                            <h4><i class="fa-solid fa-square-phone"></i></i> Tel:
                                 <span>Shoubra
                                     +201206689809 </span>
                             </h4>
                         </li>
                         <li>
-                            <h4><i class="fa-brands fa-square-github" style="font-size:16px"></i> Github: <a
-                                    target="_blank"
+                            <h4><i class="fa-brands fa-square-github"></i> Github: <a target="_blank"
                                     href="https://github.com/MarkMagdyAziz">www.github.com/MarkMagdyAziz</a>
                             </h4>
                         </li>
                         <li>
-                            <h4><i class="fa-brands fa-linkedin" style="font-size:16px"></i> LinkedIn:<a target="_blank"
+                            <h4><i class="fa-brands fa-linkedin"></i> LinkedIn:<a target="_blank"
                                     href="https://www.linkedin.com/in/mark-wahba-/">
                                     www.linkedin.com/in/mark-wahba-/</a></h4>
                         </li>
                         <li>
-                            <h4><i class="fa-solid fa-envelope" style="font-size:16px"></i> Email: <a target="_blank"
+                            <h4><i class="fa-solid fa-envelope"></i> Email: <a target="_blank"
                                     href="mailto:mark.aziz.magdy@gmail.com">mark.aziz.magdy@gmail.com</a></h4>
                         </li>
                         <li>
@@ -201,8 +203,8 @@
                     </ul>
                 </div>
             </aside>
-
         </main>
+
         <script>
             function colorPickerHandler() {
                 var colorPickerEl = document.getElementsByName("html")

@@ -1,0 +1,26 @@
+.flex-container {
+    flex-direction: row;
+    flex: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    width: 100% !important;
+}
+
+nav, article, aside, footer, summary {
+    flex: 1;
+}
+
+.col-14 .flex-container {
+    width: 100% !important;
+}
+
+
+html, .header {
+    font-size: 4vw;
+}
