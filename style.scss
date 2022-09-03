@@ -1,0 +1,143 @@
+// common style using scss
+ @use 'partial';
+
+$font-s:1vw;
+$primary-color: #333;
+
+%link-shared {
+    text-shadow: none !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+/* || General setup */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $font-s;
+}
+
+body {
+    margin: 0 auto;
+    font-family: partial.$font-stack;
+
+}
+
+
+
+
+.header {
+    padding-bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3vw;
+
+}
+
+/* || header layout */
+
+nav, article, aside, footer, summary {
+    padding: 1%;
+}
+
+/* || main layout */
+
+main {
+    display: flex;
+}
+
+article {
+    background-color: #dae2bb;
+    flex: 4;
+}
+
+aside {
+    flex: 2;
+    background-color: #95ce67
+}
+
+
+/* Nav */
+header {
+    background-color: aqua;
+    height: 7vh;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: transparent;
+    color: white;
+}
+
+a:link, a:visited {
+    @extend %link-shared;
+    color: #000;
+    
+}
+
+h2 {
+    padding: 0.25em;
+    border-radius: 10px;
+    width: auto;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: bolder;
+}
+
+meter {
+
+    margin-left: 0.625em;
+    display: inline-block;
+    width: 12vw;
+    height: 3vh;
+
+}
+
+
+.anchors {
+   a { 
+    color: #2B4865;
+    font-weight: 600;
+}
+}
+
+.colorPickerBox {
+    padding-top: 20px;
+    font-size: 1.75em;
+}
+
+.aside--info {
+    padding: 0.3125em 1.25em 1.25em 0;
+    color: black;
+}
+
+.aside--info {
+    h4{
+    font-size: 1me;
+    }
+   
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    line-height: 1.27em;
+    transition: background-color 2s;
+}
